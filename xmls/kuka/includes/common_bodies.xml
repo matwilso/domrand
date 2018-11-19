@@ -1,0 +1,15 @@
+<common>
+	<camera name="camera1" pos="0.0 0.0 0.0" mode="fixed" target="lbr4_1_link"/>
+    <geom name="floor" type="box" pos="-2.5 2.5 0" size="5.0 5.0 0.002" material="floor_mat"/>
+    <geom name="ceil" type="box" pos="-2.5 2.5 2.67" size="5.0 5.0 0.002" material="floor_mat"/>
+
+    <body name="object_table" pos="-0.88 0 0.445">
+      <inertial pos="0 0 0" mass="200" diaginertia="0.01 0.01 0.01" />
+      <geom name="object_table" size="0.38 0.61 0.445" type="box" rgba="0.823529 0.666667 0.470588 1" material="object_table_mat"/>
+
+      <body name="object" pos="0.0 0 0.485">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object" size="0.04 0.04 0.04" type="box" rgba="1.0 1.0 1.0 1" material="object_mat"/>
+      </body>
+    </body>
+</common>

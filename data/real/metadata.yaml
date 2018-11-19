@@ -1,0 +1,5 @@
+# location of camera used to collect data in this folder
+camera:
+  x: -1.75
+  y: 0
+  z: 1.62

@@ -1,0 +1,82 @@
+<reflex>
+  <body name="reflex_mount" pos="-0.003 -0.002 0" quat="0.707107 0 0.707107 0">
+    <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="0.18" diaginertia="0.00015129 7.818e-05 7.818e-05" />
+    <geom name="reflex_mount" type="mesh" mesh="reflex_mount" material="reflex_mat"/>
+    <body name="lower_shell" pos="0.013 0.0025 0" quat="0 0.707107 0 0.707107">
+      <inertial pos="0 0 0" mass="0.8" diaginertia="0.00178513 0.00152347 0.000842467" />
+      <geom name="lower_shell" type="mesh" mesh="base_link_reflex" material="reflex_mat"/>
+      <body name="pad" pos="0.02 0 0.063" quat="0.5 0.5 -0.5 -0.5">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="0.000223142 0.000190433 0.000105308" />
+        <geom name="pad" type="mesh" rgba="0.2 0.2 0.2 1" mesh="pad" material="reflex_mat"/>
+      </body>
+      <body name="swivel_1" pos="0.0503974 -0.026 0.063">
+        <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0001" diaginertia="1.60333e-08 1.25667e-08 1.15333e-08" />
+        <geom name="swivel_1" type="mesh" mesh="swivel_1" material="reflex_mat"/>
+        <body name="proximal_1" pos="0.01 0 0.0186" quat="0.990216 0 0.139543 0">
+          <inertial pos="-0.011 0.007 0.011" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.29508e-07 1.90833e-07 4.53417e-08" />
+          <geom name="proximal_1" pos="-0.011 0.007 0.011" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="proximal" material="reflex_mat"/>
+          <body name="proximal_pad_1" pos="0 0 0" quat="0.5 0.5 -0.5 -0.5">
+            <inertial pos="-0.008 0.014 -0.002" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.29508e-07 1.87708e-07 4.22167e-08" />
+            <geom name="proximal_pad_1" pos="-0.008 0.014 -0.002" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="proximal_pad" material="reflex_mat"/>
+          </body>
+          <body name="finger_1_flex_link" pos="0.07 0 0.004">
+            <inertial pos="0 0 0" mass="0.0001" diaginertia="3.50833e-09 2.08333e-09 1.84167e-09" />
+            <geom name="finger_1_flex_link" size="0.005 0.005 0.005" type="box" rgba="0.996078 0.847059 0.364706 1" material="flex_mat"/>
+            <body name="distal_1" pos="0 0 0">
+              <inertial pos="-0.077 0.007 0.007" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.00175e-07 1.89908e-07 1.50833e-08" />
+              <geom name="distal_1" pos="-0.077 0.007 0.007" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="distal" material="reflex_mat"/>
+              <body name="distal_pad_1" pos="-0.01 0 0.001" quat="0.5 0.5 -0.5 -0.5">
+                <inertial pos="-0.00825 0.009 0.057" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.00175e-07 1.87708e-07 1.28833e-08" />
+                <geom name="distal_pad_1" pos="-0.00825 0.009 0.057" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="distal_pad" material="reflex_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="swivel_2" pos="0.0503974 0.026 0.063">
+        <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0001" diaginertia="1.60333e-08 1.25667e-08 1.15333e-08" />
+        <geom name="swivel_2" type="mesh" mesh="swivel_2" material="reflex_mat"/>
+        <body name="proximal_2" pos="0.01 0 0.0186" quat="0.990216 0 0.139543 0">
+          <inertial pos="-0.011 0.007 0.011" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.29508e-07 1.90833e-07 4.53417e-08" />
+          <geom name="proximal_2" pos="-0.011 0.007 0.011" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="proximal" material="reflex_mat"/>
+          <body name="proximal_pad_2" pos="0 0 0" quat="0.5 0.5 -0.5 -0.5">
+            <inertial pos="-0.008 0.014 -0.002" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.29508e-07 1.87708e-07 4.22167e-08" />
+            <geom name="proximal_pad_2" pos="-0.008 0.014 -0.002" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="proximal_pad" material="reflex_mat"/>
+          </body>
+          <body name="finger_2_flex_link" pos="0.07 0 0.004">
+            <inertial pos="0 0 0" mass="0.0001" diaginertia="3.50833e-09 2.08333e-09 1.84167e-09" />
+            <geom name="finger_2_flex_link" size="0.005 0.005 0.005" type="box" rgba="0.996078 0.847059 0.364706 1" material="flex_mat"/>
+            <body name="distal_2" pos="0 0 0">
+              <inertial pos="-0.077 0.007 0.007" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.00175e-07 1.89908e-07 1.50833e-08" />
+              <geom name="distal_2" pos="-0.077 0.007 0.007" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="distal" material="reflex_mat"/>
+              <body name="distal_pad_2" pos="-0.01 0 0.001" quat="0.5 0.5 -0.5 -0.5">
+                <inertial pos="-0.00825 0.009 0.057" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.00175e-07 1.87708e-07 1.28833e-08" />
+                <geom name="distal_pad_2" pos="-0.00825 0.009 0.057" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="distal_pad" material="reflex_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="proximal_3" pos="-0.03 0 0.0816" quat="0 -0.139543 0 0.990216">
+        <inertial pos="-0.011 0.007 0.011" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.29508e-07 1.90833e-07 4.53417e-08" />
+        <geom name="proximal_3" pos="-0.011 0.007 0.011" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="proximal" material="reflex_mat"/>
+        <body name="proximal_pad_3" pos="0 0 0" quat="0.5 0.5 -0.5 -0.5">
+          <inertial pos="-0.008 0.014 -0.002" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.29508e-07 1.87708e-07 4.22167e-08" />
+          <geom name="proximal_pad_3" pos="-0.008 0.014 -0.002" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="proximal_pad" material="reflex_mat"/>
+        </body>
+        <body name="finger_3_flex_link" pos="0.07 0 0.004">
+          <inertial pos="0 0 0" mass="0.0001" diaginertia="3.50833e-09 2.08333e-09 1.84167e-09" />
+          <geom name="finger_3_flex_link" size="0.005 0.005 0.005" type="box" rgba="0.996078 0.847059 0.364706 1" material="flex_mat"/>
+          <body name="distal_3" pos="0 0 0">
+            <inertial pos="-0.077 0.007 0.007" quat="-0.708628 0.705582 0 0" mass="0.0001" diaginertia="2.00175e-07 1.89908e-07 1.50833e-08" />
+            <geom name="distal_3" pos="-0.077 0.007 0.007" quat="-0.00215367 0.999998 0 0" type="mesh" mesh="distal" material="reflex_mat"/>
+            <body name="distal_pad_3" pos="-0.01 0 0.001" quat="0.5 0.5 -0.5 -0.5">
+              <inertial pos="-0.00825 0.009 0.057" quat="-1.29867e-06 0.707105 -1.29868e-06 -0.707108" mass="0.0001" diaginertia="2.00175e-07 1.87708e-07 1.28833e-08" />
+              <geom name="distal_pad_3" pos="-0.00825 0.009 0.057" quat="0.499998 0.5 0.5 -0.500002" type="mesh" rgba="0.2 0.2 0.2 1" mesh="distal_pad" material="reflex_mat"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </body>
+</reflex>

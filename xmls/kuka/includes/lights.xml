@@ -1,0 +1,9 @@
+<lights>
+    <light name="light0" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light1" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light2" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light3" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light4" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light5" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+    <light name="light6" ambient="0.3 0.3 0.3" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" pos="0 0 0" dir="0 0 -1"/>
+</lights>

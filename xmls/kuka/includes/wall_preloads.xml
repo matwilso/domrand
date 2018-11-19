@@ -1,0 +1,26 @@
+<walls>
+  <asset>
+    <texture  name="wall_n_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="wall_e_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="wall_s_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="wall_w_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="window_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="wall_n_mat" shininess="0.03" specular="0.75" texture="wall_n_tex"></material>
+    <material name="wall_e_mat" shininess="0.03" specular="0.75" texture="wall_e_tex"></material>
+    <material name="wall_s_mat" shininess="0.03" specular="0.75" texture="wall_s_tex"></material>
+    <material name="wall_w_mat" shininess="0.03" specular="0.75" texture="wall_w_tex"></material>
+    <material name="window_mat" shininess="0.03" specular="0.75" texture="window_tex"></material>
+  </asset>
+
+  <default>
+   <default class="ns_wall">
+      <geom type="box" size="11.2 0.02 2.34" euler="0 0 1.5708"/>
+    </default>
+   <default class="ew_wall">
+      <geom type="box" size="4.4 0.02 2.34"/>
+    </default>
+  </default>
+</walls>
+
+ 

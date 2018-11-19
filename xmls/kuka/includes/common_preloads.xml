@@ -1,0 +1,41 @@
+<common>
+  <visual>
+    <map znear=0.0001 />
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.4 0.4 0.4" specular="0.5 0.5 0.5" />
+  </visual>
+  <compiler angle="radian" meshdir="./meshes/" />
+  <option collision="predefined" />
+
+  <asset>
+    <mesh name="base_link" file="base_link.stl" />
+    <mesh name="link0" file="link0.stl" />
+    <mesh name="link1" file="link1.stl" />
+    <mesh name="link2" file="link2.stl" />
+    <mesh name="link3" file="link3.stl" />
+    <mesh name="link4" file="link4.stl" />
+    <mesh name="link5" file="link5.stl" />
+    <mesh name="link6" file="link6.stl" />
+    <mesh name="link7" file="link7.stl" />
+    <mesh name="kuka_mount" file="kuka_mount.stl" />
+
+    <texture builtin="flat" name="floor_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="ceil_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="object_table_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="object_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="robot_table_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="base_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="arm_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="kuka_mount_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="gradient" name="skybox_tex" rgb1="1 1 1" rgb2=".6 .8 1" width="256" height="256" type="skybox"/>
+
+    <material name="floor_mat" shininess="0.03" specular="0.75" texture="floor_tex"></material>
+    <material name="ceil_mat" shininess="0.03" specular="0.75" texture="ceil_tex"></material>
+    <material name="object_table_mat" shininess="0.03" specular="0.75" texture="object_table_tex"></material>
+    <material name="object_mat" shininess="0.03" specular="0.75" texture="object_tex"></material>
+    <material name="robot_table_mat" shininess="0.03" specular="0.75" texture="robot_table_tex"></material>
+    <material name="base_mat" shininess="0.03" specular="0.75" texture="base_tex"></material>
+    <material name="arm_mat" shininess="0.03" specular="0.75" texture="arm_tex"></material>
+    <material name="kuka_mount_mat" shininess="0.03" specular="0.75" texture="kuka_mount_tex"></material>
+    <material name="skybox_mat" shininess="0.03" specular="0.75" texture="skybox_tex"></material>
+  </asset>
+</common>

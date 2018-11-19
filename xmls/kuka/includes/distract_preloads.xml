@@ -1,0 +1,53 @@
+<distract>
+  <default>
+    <!-- TODO: could make this a bit cleaner with subclasses -->
+    <default class="distract">
+      <geom type="box" size="0.1 0.1 0.1"/>
+    </default>
+  </default>
+
+  <asset>
+    <texture  name="distract0_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract1_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract2_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract3_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract4_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract5_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract6_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract7_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract8_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract9_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract10_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract11_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract12_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract13_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract14_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract15_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract16_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract17_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract18_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="distract19_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="distract0_mat" shininess="0.03" specular="0.75" texture="distract0_tex"></material>
+    <material name="distract1_mat" shininess="0.03" specular="0.75" texture="distract1_tex"></material>
+    <material name="distract2_mat" shininess="0.03" specular="0.75" texture="distract2_tex"></material>
+    <material name="distract3_mat" shininess="0.03" specular="0.75" texture="distract3_tex"></material>
+    <material name="distract4_mat" shininess="0.03" specular="0.75" texture="distract4_tex"></material>
+    <material name="distract5_mat" shininess="0.03" specular="0.75" texture="distract5_tex"></material>
+    <material name="distract6_mat" shininess="0.03" specular="0.75" texture="distract6_tex"></material>
+    <material name="distract7_mat" shininess="0.03" specular="0.75" texture="distract7_tex"></material>
+    <material name="distract8_mat" shininess="0.03" specular="0.75" texture="distract8_tex"></material>
+    <material name="distract9_mat" shininess="0.03" specular="0.75" texture="distract9_tex"></material>
+    <material name="distract10_mat" shininess="0.03" specular="0.75" texture="distract10_tex"></material>
+    <material name="distract11_mat" shininess="0.03" specular="0.75" texture="distract11_tex"></material>
+    <material name="distract12_mat" shininess="0.03" specular="0.75" texture="distract12_tex"></material>
+    <material name="distract13_mat" shininess="0.03" specular="0.75" texture="distract13_tex"></material>
+    <material name="distract14_mat" shininess="0.03" specular="0.75" texture="distract14_tex"></material>
+    <material name="distract15_mat" shininess="0.03" specular="0.75" texture="distract15_tex"></material>
+    <material name="distract16_mat" shininess="0.03" specular="0.75" texture="distract16_tex"></material>
+    <material name="distract17_mat" shininess="0.03" specular="0.75" texture="distract17_tex"></material>
+    <material name="distract18_mat" shininess="0.03" specular="0.75" texture="distract18_tex"></material>
+    <material name="distract19_mat" shininess="0.03" specular="0.75" texture="distract19_tex"></material>
+
+  </asset>
+</distract>

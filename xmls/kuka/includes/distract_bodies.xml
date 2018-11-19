@@ -1,0 +1,62 @@
+<distract>
+  <body name="distract0" pos="0.0 0.0 0.0">
+    <geom name="distract0" material="distract0_mat" class="distract"/>
+  </body>
+  <body name="distract1" pos="0.0 0.0 0.0">
+    <geom name="distract1" material="distract1_mat" class="distract"/>
+  </body>
+  <body name="distract2" pos="0.0 0.0 0.0">
+    <geom name="distract2" material="distract2_mat" class="distract"/>
+  </body>
+  <body name="distract3" pos="0.0 0.0 0.0">
+    <geom name="distract3" material="distract3_mat" class="distract"/>
+  </body>
+  <body name="distract4" pos="0.0 0.0 0.0">
+    <geom name="distract4" material="distract4_mat" class="distract"/>
+  </body>
+  <body name="distract5" pos="0.0 0.0 0.0">
+    <geom name="distract5" material="distract5_mat" class="distract"/>
+  </body>
+  <body name="distract6" pos="0.0 0.0 0.0">
+    <geom name="distract6" material="distract6_mat" class="distract"/>
+  </body>
+  <body name="distract7" pos="0.0 0.0 0.0">
+    <geom name="distract7" material="distract7_mat" class="distract"/>
+  </body>
+  <body name="distract8" pos="0.0 0.0 0.0">
+    <geom name="distract8" material="distract8_mat" class="distract"/>
+  </body>
+  <body name="distract9" pos="0.0 0.0 0.0">
+    <geom name="distract9" material="distract9_mat" class="distract"/>
+  </body>
+  <body name="distract10" pos="0.0 0.0 0.0">
+    <geom name="distract10" material="distract10_mat" class="distract"/>
+  </body>
+  <body name="distract11" pos="0.0 0.0 0.0">
+    <geom name="distract11" material="distract11_mat" class="distract"/>
+  </body>
+  <body name="distract12" pos="0.0 0.0 0.0">
+    <geom name="distract12" material="distract12_mat" class="distract"/>
+  </body>
+  <body name="distract13" pos="0.0 0.0 0.0">
+    <geom name="distract13" material="distract13_mat" class="distract"/>
+  </body>
+  <body name="distract14" pos="0.0 0.0 0.0">
+    <geom name="distract14" material="distract14_mat" class="distract"/>
+  </body>
+  <body name="distract15" pos="0.0 0.0 0.0">
+    <geom name="distract15" material="distract15_mat" class="distract"/>
+  </body>
+  <body name="distract16" pos="0.0 0.0 0.0">
+    <geom name="distract16" material="distract16_mat" class="distract"/>
+  </body>
+  <body name="distract17" pos="0.0 0.0 0.0">
+    <geom name="distract17" material="distract17_mat" class="distract"/>
+  </body>
+  <body name="distract18" pos="0.0 0.0 0.0">
+    <geom name="distract18" material="distract18_mat" class="distract"/>
+  </body>
+  <body name="distract19" pos="0.0 0.0 0.0">
+    <geom name="distract19" material="distract19_mat" class="distract"/>
+  </body>
+</distract>

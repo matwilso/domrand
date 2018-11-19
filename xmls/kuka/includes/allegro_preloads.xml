@@ -1,0 +1,28 @@
+<allegro>
+
+  <asset>
+    <mesh name="allegro_mount" file="allegro_mount.stl" />
+    <mesh name="palm_link" file="palm_allegro.stl" />
+    <mesh name="finger_0" file="finger_0.stl" />
+    <mesh name="finger_1" file="finger_1.stl" />
+    <mesh name="finger_2" file="finger_2.stl" />
+    <mesh name="finger_3" file="finger_3.stl" />
+    <mesh name="finger_4" file="finger_4.stl" />
+    <mesh name="thumb_0_right" file="thumb_0_right.stl" />
+    <mesh name="thumb_1" file="thumb_1.stl" />
+    <mesh name="thumb_2" file="thumb_2.stl" />
+    <mesh name="thumb_3" file="thumb_3.stl" />
+    <mesh name="thumb_4" file="thumb_4.stl" />
+
+    <texture builtin="flat" name="allegro_mount_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="hand_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="tip_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="allegro_mount_mat" shininess="0.03" specular="0.75" texture="allegro_mount_tex"></material>
+    <material name="hand_mat" shininess="0.03" specular="0.75" texture="hand_tex"></material>
+    <material name="tip_mat" shininess="0.03" specular="0.75" texture="tip_tex"></material>
+  </asset>
+
+
+
+</allegro>

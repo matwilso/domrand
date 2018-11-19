@@ -1,0 +1,81 @@
+<mujoco model="lbr4">
+  <visual>
+	  <map znear=0.0001 />
+  </visual>
+  <compiler angle="radian" meshdir="./meshes/" />
+  <option collision="predefined" />
+  <!--
+  <actuator>
+      <position ctrllimited="true" ctrlrange="-2.879 2.879" joint="lbr4_j0" kp="10000" name="lbr4_j0"></position>
+      <position ctrllimited="true" ctrlrange="-2.007 2.007" joint="lbr4_j1" kp="10000" name="lbr4_j1"></position>
+      <position ctrllimited="true" ctrlrange="-2.879 2.879" joint="lbr4_j2" kp="10000" name="lbr4_j2"></position>
+      <position ctrllimited="true" ctrlrange="-2.007 2.007" joint="lbr4_j3" kp="10000" name="lbr4_j3"></position>
+      <position ctrllimited="true" ctrlrange="-2.879 2.879" joint="lbr4_j4" kp="10000" name="lbr4_j4"></position>
+      <position ctrllimited="true" ctrlrange="-2.007 2.007" joint="lbr4_j5" kp="10000" name="lbr4_j5"></position>
+      <position ctrllimited="true" ctrlrange="-2.879 2.879" joint="lbr4_j6" kp="10000" name="lbr4_j6"></position>
+  </actuator>
+  -->
+
+  <include file="includes/common_preloads.xml"></include>
+  <include file="includes/wall_preloads.xml"></include>
+  <include file="includes/allegro_preloads.xml"></include>
+
+  <worldbody>
+    <include file="includes/lights.xml"></include>
+    <include file="includes/common_bodies.xml"></include>
+		<include file="includes/wall_bodies.xml"></include>
+
+    <body name="robot_table_link" pos="0 0 0.295">
+      <inertial pos="0 0 0" mass="200" diaginertia="0.1 0.1 0.1" />
+      <geom name="robot_table_link" size="0.305 0.45625 0.295" type="box" rgba="0.823529 0.666667 0.470588 1" material="robot_table_mat"/>
+      <body name="base_link" pos="0 0 0.305" quat="0.707388 0 0 0.706825">
+        <inertial pos="0.0015 -0.0013135 -0.000496533" quat="-1.63027e-05 0.707107 -1.63027e-05 0.707107" mass="1.60945" diaginertia="0.02334 0.0118089 0.0116229" />
+        <geom name="base_link" type="mesh" rgba="0.2 0.2 0.2 1" mesh="base_link" material="base_mat"/>
+        <body name="lbr4_0_link" pos="0.0015 -0.0015 0.009">
+          <inertial pos="0.00997877 -0.000481699 -0.254855" quat="-0.293322 0.633117 -0.0717834 0.712722" mass="1.5" diaginertia="0.00863586 0.00845152 0.00805113" />
+          <geom name="lbr4_0_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link0" material="arm_mat"/>
+          <body name="lbr4_1_link" pos="0 0 0.103">
+            <inertial pos="2.1827e-05 -0.0216238 -0.0791517" quat="0.99254 0.119381 0.0056098 0.0241076" mass="1.5" diaginertia="0.0129545 0.0128178 0.00442073" />
+            <joint name="lbr4_j0" pos="0 0 0" axis="0 0 1" limited="true" range="-2.879 2.879" />
+            <geom name="lbr4_1_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link1" material="arm_mat"/>
+            <body name="lbr4_2_link" pos="0 -0.002 0.208">
+              <inertial pos="-0.00100971 0.0284785 0.0820336" quat="0.991568 0.12607 -0.00469624 0.0296182" mass="1.5" diaginertia="0.013295 0.0131003 0.00446574" />
+              <joint name="lbr4_j1" pos="0 0 0" axis="0 -1 0" limited="true" range="-2.007 2.007" />
+              <geom name="lbr4_2_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link2" material="arm_mat"/>
+              <body name="lbr4_3_link" pos="0 0 0.1915">
+                <inertial pos="-0.000685125 0.0227876 -0.0788065" quat="0.706358 -0.0808672 0.0682921 0.699896" mass="1.5" diaginertia="0.0128011 0.0127764 0.00436274" />
+                <joint name="lbr4_j2" pos="0 0 0" axis="0 0 1" limited="true" range="-2.879 2.879" />
+                <geom name="lbr4_3_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link3" material="arm_mat"/>
+                <body name="lbr4_4_link" pos="0 0.002 0.2085">
+                  <inertial pos="-0.000251206 0.0270405 0.0825999" quat="0.991344 0.129174 0.00191488 0.0234177" mass="1.5" diaginertia="0.0132277 0.0130734 0.00439978" />
+                  <joint name="lbr4_j3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.007 2.007" />
+                  <geom name="lbr4_4_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link4" material="arm_mat"/>
+                  <body name="lbr4_5_link" pos="0 0 0.1915">
+                    <inertial pos="-7.29517e-05 0.0343006 -0.0828364" quat="0.690864 -0.149244 0.131148 0.69515" mass="1.5" diaginertia="0.012471 0.0124408 0.00438006" />
+                    <joint name="lbr4_j4" pos="0 0 0" axis="0 0 1" limited="true" range="-2.879 2.879" />
+                    <geom name="lbr4_5_link" pos="0 0 0" type="mesh" rgba="1 0.423529 0.196078 1" mesh="link5" material="arm_mat"/>
+                    <body name="lbr4_6_link" pos="0 0 0.199">
+                      <inertial pos="0.00332658 -0.000250606 0.000625058" quat="0.603426 0.403302 0.36782 0.58132" mass="0.75" diaginertia="0.00298257 0.00296893 0.00284169" />
+                      <joint name="lbr4_j5" pos="0 0 0" axis="0 -1 0" limited="true" range="-2.007 2.007" />
+                      <geom name="lbr4_6_link" type="mesh" rgba="0.3 0.3 0.3 1" mesh="link6" material="arm_mat"/>
+                      <body name="lbr4_7_link" pos="0 0 0.078">
+                        <inertial pos="-1.05089e-05 0.000493915 0.0625078" quat="0.218059 0.669521 -0.214663 0.67684" mass="0.075" diaginertia="9.68983e-05 5.84472e-05 5.81503e-05" />
+                        <joint name="lbr4_j6" pos="0 0 0" axis="0 0 1" limited="true" range="-2.879 2.879" />
+                        <geom name="lbr4_7_link" type="mesh" rgba="0.2 0.2 0.2 1" mesh="link7" material="arm_mat"/>
+                        <body name="lbr4_mount" pos="0.0009 0.0009 0.015" quat="0 -1 0 0">
+                          <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="0.199" diaginertia="0.000201488 0.000104475 0.000104475" />
+                          <geom name="lbr4_mount" type="mesh" rgba="0.2 0.2 0.2 1" mesh="kuka_mount" material="kuka_mount_mat"/>
+                          <include file="includes/allegro_bodies.xml"></include>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

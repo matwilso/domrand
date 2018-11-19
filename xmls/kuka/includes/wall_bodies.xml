@@ -1,0 +1,35 @@
+<walls>
+    wall_n and wall_s vary in the X dimension
+    wall_e and wall_w vary in the Y dimension
+
+    To compute the offset so that they are centered,
+    use the diff between the other walls / 2, then subtract
+    off the offset for the center at the robot.  I should really
+    write a script for this, but I have it mostly working.
+
+    <body name="wall_n" pos="-5.35 9.07 1.34">
+        <geom name="wall_n" material="wall_n_mat" class="ns_wall" />
+    </body>
+
+    <body name="wall_e" pos="-1.95 19.27 1.34">
+        <geom name="wall_e" material="wall_n_mat" class="ew_wall" />
+    </body>
+
+	<body name="wall_s" pos="1.45 9.07 1.34">
+        <geom name="wall_s" material="wall_n_mat" class="ns_wall" />
+    </body>
+
+    <body name="wall_w" pos="-1.95 -1.13 1.34">
+        <geom name="wall_w" material="wall_n_mat" class="ew_wall" />
+        <body name="west_window" pos="0 0 0">
+            <geom name="west_window" material="window_mat" type="box" size="3.4 0.02 0.55" pos="0 0.01 0"/>
+        </body>
+    </body>
+</walls>
+
+<!--
+        <body name="west_window" pos="-1.95 -1.12 1.65">
+            <geom name="west_window" material="window_mat" type="box" size="3.4 0.02 0.55"/>
+        </body>
+
+-->

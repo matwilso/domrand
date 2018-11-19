@@ -1,0 +1,106 @@
+<allegro>
+  <body name="allegro_mount" pos="-0.0425 0 -0.0425" quat="0.707388 0 0.706825 0">
+    <inertial pos="0 0 0" mass="0.05" diaginertia="0.0001 0.0001 0.0001" />
+    <geom name="allegro_mount" pos="-0.0425 -0.0425 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="allegro_mount" material="allegro_mount_mat"/>
+    <body name="palm_link" pos="0.065 0 0.0275" quat="0.707388 0 0.706825 0">
+      <inertial pos="0 0 0" mass="0.4154" diaginertia="0.0001 0.0001 0.0001" />
+      <geom name="palm_link" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="palm_link" material="hand_mat"/>
+      <body name="index_finger_0" pos="0 0.0435 -0.001542" quat="0.999048 -0.0436194 0 0">
+        <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07" />
+        <joint name="index_joint_0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.59 0.57" />
+        <geom name="index_finger_0" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_0" material="hand_mat"/>
+        <body name="index_finger_1" pos="0 0 0.0164">
+          <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05" />
+          <joint name="index_joint_1" pos="0 0 0" axis="0 1 0" limited="true" range="-0.296 1.71" />
+          <geom name="index_finger_1" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_1" material="hand_mat"/>
+          <body name="index_finger_2" pos="0 0 0.054">
+            <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05" />
+            <joint name="index_joint_2" pos="0 0 0" axis="0 1 0" limited="true" range="-0.274 1.809" />
+            <geom name="index_finger_2" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_2" material="hand_mat"/>
+            <body name="index_finger_3" pos="0 0 0.0384">
+              <inertial pos="0 0 0" quat="0.760448 0.456478 -0.161222 0.432844" mass="0.0096" diaginertia="4.3506e-06 4.3506e-06 4.3506e-06" />
+              <joint name="index_joint_3" pos="0 0 0" axis="0 1 0" limited="true" range="-0.327 1.718" />
+              <geom name="index_finger_3" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_3" material="hand_mat"/>
+              <body name="index_tip" pos="0 0 0.0267">
+                <inertial pos="0 0 0" mass="0.0168" diaginertia="9.68e-07 9.68e-07 9.68e-07" />
+                <geom name="index_tip" type="mesh" rgba="1 1 1 1" mesh="finger_4" material="tip_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="middle_finger_0" pos="0 0 0.0007">
+        <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07" />
+        <joint name="middle_joint_0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.59 0.57" />
+        <geom name="middle_finger_0" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_0" material="hand_mat"/>
+        <body name="middle_finger_1" pos="0 0 0.0164">
+          <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05" />
+          <joint name="middle_joint_1" pos="0 0 0" axis="0 1 0" limited="true" range="-0.296 1.71" />
+          <geom name="middle_finger_1" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_1" material="hand_mat"/>
+          <body name="middle_finger_2" pos="0 0 0.054">
+            <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05" />
+            <joint name="middle_joint_2" pos="0 0 0" axis="0 1 0" limited="true" range="-0.274 1.809" />
+            <geom name="middle_finger_2" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_2" material="hand_mat"/>
+            <body name="middle_finger_3" pos="0 0 0.0384">
+              <inertial pos="0 0 0" quat="0.760448 0.456478 -0.161222 0.432844" mass="0.0096" diaginertia="4.3506e-06 4.3506e-06 4.3506e-06" />
+              <joint name="middle_joint_3" pos="0 0 0" axis="0 1 0" limited="true" range="-0.327 1.718" />
+              <geom name="middle_finger_3" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_3" material="hand_mat"/>
+              <body name="middle_tip" pos="0 0 0.0267">
+                <inertial pos="0 0 0" mass="0.0168" diaginertia="9.68e-07 9.68e-07 9.68e-07" />
+                <geom name="middle_tip" type="mesh" rgba="1 1 1 1" mesh="finger_4" material="tip_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="ring_finger_0" pos="0 -0.0435 -0.001542" quat="0.999048 0.0436194 0 0">
+        <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0119" diaginertia="1.01667e-06 1.01667e-06 6.47677e-07" />
+        <joint name="ring_joint_0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.59 0.57" />
+        <geom name="ring_finger_0" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_0" material="hand_mat"/>
+        <body name="ring_finger_1" pos="0 0 0.0164">
+          <inertial pos="0 0 0" quat="0.702596 0.559386 -0.178354 0.402039" mass="0.065" diaginertia="6.12799e-05 6.12799e-05 6.12799e-05" />
+          <joint name="ring_joint_1" pos="0 0 0" axis="0 1 0" limited="true" range="-0.296 1.71" />
+          <geom name="ring_finger_1" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_1" material="hand_mat"/>
+          <body name="ring_finger_2" pos="0 0 0.054">
+            <inertial pos="0 0 0" quat="0.719796 0.528175 -0.157463 0.422055" mass="0.0355" diaginertia="2.20969e-05 2.20969e-05 2.20969e-05" />
+            <joint name="ring_joint_2" pos="0 0 0" axis="0 1 0" limited="true" range="-0.274 1.809" />
+            <geom name="ring_finger_2" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_2" material="hand_mat"/>
+            <body name="ring_finger_3" pos="0 0 0.0384">
+              <inertial pos="0 0 0" quat="0.760448 0.456478 -0.161222 0.432844" mass="0.0096" diaginertia="4.3506e-06 4.3506e-06 4.3506e-06" />
+              <joint name="ring_joint_3" pos="0 0 0" axis="0 1 0" limited="true" range="-0.327 1.718" />
+              <geom name="ring_finger_3" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="finger_3" material="hand_mat"/>
+              <body name="ring_tip" pos="0 0 0.0267">
+                <inertial pos="0 0 0" mass="0.0168" diaginertia="9.68e-07 9.68e-07 9.68e-07" />
+                <geom name="ring_tip" type="mesh" rgba="1 1 1 1" mesh="finger_4" material="tip_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="thumb_finger_0" pos="-0.0182 0.022333 -0.045987" quat="0.51279 -0.480013 -0.559612 -0.439851">
+        <inertial pos="0 0 0" quat="0.692635 0.569362 -0.07143 0.437013" mass="0.0176" diaginertia="1.73852e-05 1.73852e-05 1.73852e-05" />
+        <joint name="thumb_joint_0" pos="0 0 0" axis="-1 0 0" limited="true" range="0.363 1.62" />
+        <geom name="thumb_finger_0" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="thumb_0_right" material="hand_mat"/>
+        <body name="thumb_finger_1" pos="-0.027 0.005 0.0399">
+          <inertial pos="0 0 0" quat="-0.0269589 0.880876 0.334036 0.334292" mass="0.0119" diaginertia="4.33621e-06 4.33621e-06 4.33621e-06" />
+          <joint name="thumb_joint_1" pos="0 0 0" axis="0 0 1" limited="true" range="-0.205 1.263" />
+          <geom name="thumb_finger_1" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="thumb_1" material="hand_mat"/>
+          <body name="thumb_finger_2" pos="0 0 0.0177">
+            <inertial pos="0 0 0" quat="0.70472 0.55555 -0.174905 0.405146" mass="0.038" diaginertia="3.35111e-05 3.35111e-05 3.35111e-05" />
+            <joint name="thumb_joint_2" pos="0 0 0" axis="0 1 0" limited="true" range="-0.289 1.744" />
+            <geom name="thumb_finger_2" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="thumb_2" material="hand_mat"/>
+            <body name="thumb_finger_3" pos="0 0 0.0514">
+              <inertial pos="0 0 0" quat="0.714142 0.538398 -0.162448 0.416821" mass="0.0388" diaginertia="2.68646e-05 2.68646e-05 2.68646e-05" />
+              <joint name="thumb_joint_3" pos="0 0 0" axis="0 1 0" limited="true" range="-0.262 1.819" />
+              <geom name="thumb_finger_3" pos="0 0 0" type="mesh" rgba="0.2 0.2 0.2 1" mesh="thumb_3" material="hand_mat"/>
+              <body name="thumb_tip" pos="0 0 0.0423">
+                <inertial pos="0 0 0" mass="0.0168" diaginertia="9.68e-07 9.68e-07 9.68e-07" />
+                <geom name="thumb_tip" type="mesh" rgba="1 1 1 1" mesh="thumb_4" material="tip_mat"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </body>
+</allegro>

@@ -1,0 +1,22 @@
+<reflex>
+
+  <asset>
+    <mesh name="reflex_mount" file="reflex_mount.stl" />
+    <mesh name="base_link_reflex" file="base_link_reflex.stl" />
+    <mesh name="pad" file="pad.stl" />
+    <mesh name="swivel_1" file="swivel_1.stl" />
+    <mesh name="swivel_2" file="swivel_2.stl" />
+    <mesh name="proximal" file="proximal.stl" />
+    <mesh name="proximal_pad" file="proximal_pad.stl" />
+    <mesh name="distal" file="distal.stl" />
+    <mesh name="distal_pad" file="distal_pad.stl" />
+
+    <texture builtin="flat" name="reflex_mount_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="reflex_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="flex_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="reflex_mount_mat" shininess="0.03" specular="0.75" texture="reflex_mount_tex"></material>
+    <material name="reflex_mat" shininess="0.03" specular="0.75" texture="reflex_tex"></material>
+    <material name="flex_mat" shininess="0.03" specular="0.75" texture="flex_tex"></material>
+  </asset>
+</reflex>
