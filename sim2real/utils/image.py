@@ -6,7 +6,7 @@ from sim2real.utils.constants import TOX, TOY, GRID_SPACING, TWX, TWY, TBS, TBE,
 from sim2real.utils.general import softmax, bin_to_xyz_np
 
 # IMAGE UTILS
-def display_image(cam_img, real_img_path='./data/real/0/3-3.jpg', mode='preproc'):
+def display_image(cam_img, real_img_path='./data/real/3-3.jpg', mode='preproc'):
     """matplotlib show image"""
     if real_img_path is not None:
         real_img = plt.imread(real_img_path)

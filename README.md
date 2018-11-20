@@ -22,10 +22,30 @@ of positions I was using.
 
 ## Results
 
-I train with the same model architecture described in the original paper,
-only purely randomized simulated images, such as:
+**Example simulated training images**
 
-// TODO: add pictures of simulation data
+<img src='./data/example_sim/1.png' width="75"/> <img src='./data/example_sim/2.png' width="75"/>
+<img src='./data/example_sim/3.png' width="75"/>
+<img src='./data/example_sim/4.png' width="75"/>
+<img src='./data/example_sim/5.png' width="75"/>
+<img src='./data/example_sim/6.png' width="75"/>
+<img src='./data/example_sim/7.png' width="75"/>
+<img src='./data/example_sim/8.png' width="75"/>
+<img src='./data/example_sim/9.png' width="75"/>
+<img src='./data/example_sim/10.png' width="75"/>
+
+<img src='./data/example_sim/11.png' width="75"/> <img src='./data/example_sim/12.png' width="75"/>
+<img src='./data/example_sim/13.png' width="75"/>
+<img src='./data/example_sim/14.png' width="75"/>
+<img src='./data/example_sim/15.png' width="75"/>
+<img src='./data/example_sim/16.png' width="75"/>
+<img src='./data/example_sim/17.png' width="75"/>
+<img src='./data/example_sim/18.png' width="75"/>
+<img src='./data/example_sim/19.png' width="75"/>
+<img src='./data/example_sim/20.png' width="75"/>
+
+
+**Evaluation**
 
 To evaluate my system, I collected [52 images](./data/real) from the real world
 with a cube placed in uniformly spaced positions on a table in front of the
@@ -96,8 +116,8 @@ python3 run_training.py
 This trains in about 3 hours on a GTX 1080 Ti GPU.
 
 You can monitor training progress and results using TensorBoard. The default
-is to log into the `checkpoint` folder.  See [`sim2real/define_flags.py`]() or
-`python3 run_trainig.py --help` for script settings.
+is to log into the `checkpoint` folder.  See [`sim2real/define_flags.py`](./sim2real/define_flags.py) or
+`python3 run_training.py --help` for script settings.
 
 
 <a name="mujoco"></a>
