@@ -94,7 +94,7 @@ def _make_binned_plot(image, pred, sparse_label):
     pred_a = bin_to_xyz_np(np.argmax(pred, 1), bins)
     label = bin_to_xyz_np(sparse_label, bins)
 
-    fig, (ax1, ax2, ax3, ax4) = plt.subplots(1,4)
+    fig, (ax1, ax2) = plt.subplots(1,2)
 
     ax1.imshow(image)#, aspect='auto')
     ax1.set_title('image')
@@ -102,8 +102,8 @@ def _make_binned_plot(image, pred, sparse_label):
     ax2.set_title('plot')
     ax2.axis('equal')
     ax2.plot([TABLE_LINES[:,0], TABLE_LINES[:,1]], [TABLE_LINES[:,2], TABLE_LINES[:,3]], color='black')
-    ax2.plot(*pred_a[:2][::-1], 'o', color='C0', label='pred argmax: {}'.format(pred_a))
-    ax2.plot(*pred_c[:2][::-1], '^', color='C9', alpha=0.5, label='pred softmax: {}'.format(pred_c))
+    ax2.plot(*pred_a[:2][::-1], 'o', color='C0', label='pred: {}'.format(pred_a))
+    #ax2.plot(*pred_c[:2][::-1], '^', color='C9', alpha=0.5, label='pred softmax: {}'.format(pred_c))
 
     if label is not None:
         ax2.plot(*label[:2][::-1], 'x', color='C3', label='label: {}'.format(label))
@@ -112,14 +112,6 @@ def _make_binned_plot(image, pred, sparse_label):
 
     ax2.legend()
     ax2.invert_xaxis()
-
-    ax3.imshow(combined_prob)
-    ax3.set_title('Probability map')
-
-    true_map = np.zeros_like(combined_prob)
-    true_map[sparse_label[0],sparse_label[1]] = 1
-    ax4.imshow(true_map)
-    ax4.set_title('true map')
 
     fig.canvas.draw()
     X = np.array(fig.canvas.renderer._renderer)

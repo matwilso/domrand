@@ -56,6 +56,7 @@ the edge of the table, and that despite a few outliers, the results are
 pretty strong (maybe 2.5-ish cm).
 
 // TODO: show percentiles of results
+
 // TODO: adapt script to load and run model from checkpoint to evaluate images and return accuracy value
 
 ## Setup
