@@ -85,7 +85,7 @@ def train_simple():
     with tf.name_scope('aviz_train'):
         viz_train_summary = tf.summary.image('viz', pred_plot_ph, max_outputs=10)
     with tf.name_scope('aviz_eval'):
-        viz_eval_summary = tf.summary.image('viz', pred_plot_ph, max_outputs=20)
+        viz_eval_summary = tf.summary.image('viz', pred_plot_ph, max_outputs=60)
 
     config = tf.ConfigProto()
     #config.gpu_options.allow_growth = True
@@ -150,8 +150,8 @@ def train_simple():
                     # takes about 2s 
                     # EVAL VIZ
                     zipped = list(zip(eval_images, eval_preds, eval_labels))
-                    idxs = np.linspace(0,50,20).astype(int)
-                    zipped = [zipped[idx] for idx in idxs]
+                    #idxs = np.linspace(0,50,50).astype(int)
+                    #zipped = [zipped[idx] for idx in idxs]
                     eval_plots = np.array([make_pred_plot(img, pred, label, mode=FLAGS.output) for (img, pred, label) in zipped])
                     plot_summary = sess.run([viz_eval_summary], {pred_plot_ph:eval_plots})[0]
                     eval_writer.add_summary(plot_summary, global_step=epoch*len(FLAGS.filenames))

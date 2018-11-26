@@ -41,6 +41,7 @@ flags.DEFINE_bool('batch_norm', default=False, help='')
 flags.DEFINE_bool('ssam', default=False, help='spatial soft-argmax')
 flags.DEFINE_bool('softmax', default=False, help='just softmax right before flattening (only when not using ssam)')
 flags.DEFINE_string('activ', default='relu', help='activation function')
+flags.DEFINE_string('suffix', default='', help='')
 
 flags.DEFINE_list('s2_layers', default=[64, 64, 64, 64], help='conv layers of stride 2')
 flags.DEFINE_list('s1_layers', default=[64], help='conv layers of stride 1')
@@ -79,6 +80,7 @@ settings_str += '-'+FLAGS.arch
 settings_str += '-ssam' if FLAGS.ssam else '-noss'
 settings_str += '-soft' if FLAGS.softmax and not FLAGS.ssam else ''
 settings_str += '-bn' if FLAGS.batch_norm else '-nb'
+settings_str += '-{}'.format(FLAGS.suffix) if FLAGS.suffix is not '' else ''
 
 if FLAGS.arch == 'reg':
     hp_str = '{}/{}/{}_2-{}_1-{}/{}-{}-{}-{}'.format(num_files_str, settings_str, FLAGS.s2_layers, FLAGS.s1_layers, FLAGS.fc_layers, FLAGS.lr, FLAGS.lr_anneal, FLAGS.anneal_interval, FLAGS.bs).replace(' ', '').replace(',','-').replace('[','').replace(']','')
