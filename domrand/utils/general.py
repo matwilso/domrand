@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from sim2real.utils.constants import TBS, TBE, TBS_TF, TBE_TF
+from domrand.utils.constants import TBS, TBE, TBS_TF, TBE_TF
 
 # TODO: write docs and tests for these
 # TODO: add softmax version of binpreds

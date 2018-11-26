@@ -6,8 +6,8 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.python.lib.io.tf_record import TFRecordOptions, TFRecordCompressionType, TFRecordWriter
 import matplotlib.pyplot as plt
-from sim2real.utils.image import preproc_image
-from sim2real.utils.constants import OBJ_DZ, TABLE_GRID_OFFX, TABLE_GRID_OFFY,  \
+from domrand.utils.image import preproc_image
+from domrand.utils.constants import OBJ_DZ, TABLE_GRID_OFFX, TABLE_GRID_OFFY,  \
     GRID_SPACING, TABLE_WX, TABLE_WY, TBS_TF, TBE_TF
 
 """
@@ -74,7 +74,7 @@ def parse_record(args):
 # them reliant on running from command line
 
 def bin_label(image, label):
-    from sim2real.define_flags import FLAGS
+    from domrand.define_flags import FLAGS
     frac = (label - TBS_TF) / (TBE_TF - TBS_TF)
     assert_op = tf.Assert(tf.logical_not(tf.reduce_any(tf.logical_or(frac < -0.1, frac > 1.1))), [label, frac]) # if this triggers, the label was way off the table
 
@@ -85,7 +85,7 @@ def bin_label(image, label):
 
 def brighten_image(image, label):
     """Add random brightness to image to better match the distribution"""
-    from sim2real.define_flags import FLAGS
+    from domrand.define_flags import FLAGS
     delta = tf.random_uniform(shape=[], minval=FLAGS.minval, maxval=FLAGS.maxval, dtype=tf.float32)
     image = tf.image.adjust_brightness(image, delta)
 

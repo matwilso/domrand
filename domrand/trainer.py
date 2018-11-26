@@ -9,12 +9,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tqdm
 
-from sim2real.define_flags import FLAGS
-from sim2real.utils.models import XYZModel, BinnedModel
-from sim2real.utils.general import notify
-from sim2real.utils.data import load_eval_data, parse_record, brighten_image, bin_label
-from sim2real.utils.image import make_pred_plot
-#from sim2real.utils.constants import MEAN_TENSOR
+from domrand.define_flags import FLAGS
+from domrand.utils.models import XYZModel, BinnedModel
+from domrand.utils.general import notify
+from domrand.utils.data import load_eval_data, parse_record, brighten_image, bin_label
+from domrand.utils.image import make_pred_plot
+#from domrand.utils.constants import MEAN_TENSOR
 
 # TODO: Try making this a Trainer class (I think this would let us reuse a bit more)
 

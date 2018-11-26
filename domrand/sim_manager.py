@@ -10,13 +10,13 @@ import mujoco_py
 from mujoco_py import load_model_from_path, MjSim, MjViewer , functions
 from mujoco_py.modder import BaseModder, CameraModder, LightModder, MaterialModder
 
-from sim2real.define_flags import FLAGS
-from sim2real.utils.image import display_image, preproc_image
-from sim2real.utils.data import get_real_cam_pos
-from sim2real.utils.modder import TextureModder
-from sim2real.utils.sim import look_at
-from sim2real.utils.sim import Range, Range3D, rto3d # object type things
-from sim2real.utils.sim import sample, sample_xyz, sample_joints, sample_light_dir, sample_quat, sample_geom_type, random_quat, jitter_quat, jitter_angle
+from domrand.define_flags import FLAGS
+from domrand.utils.image import display_image, preproc_image
+from domrand.utils.data import get_real_cam_pos
+from domrand.utils.modder import TextureModder
+from domrand.utils.sim import look_at
+from domrand.utils.sim import Range, Range3D, rto3d # object type things
+from domrand.utils.sim import sample, sample_xyz, sample_joints, sample_light_dir, sample_quat, sample_geom_type, random_quat, jitter_quat, jitter_angle
 
 # GLOSSARY:
 # gid = geom_id

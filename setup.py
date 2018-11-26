@@ -9,9 +9,9 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'sim2real'
-DESCRIPTION = 'sim2real code'
-URL = 'https://bitbucket.org/robot-learning/sim2real/'
+NAME = 'domrand'
+DESCRIPTION = 'domrand code'
+URL = 'https://github.com/matwilso/domrand'
 EMAIL = 'mattwilsonmbw@gmail.com'
 AUTHOR = 'Matthew Wilson'
 REQUIRES_PYTHON = '>=3.5.0'

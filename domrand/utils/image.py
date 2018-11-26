@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 #cv2.ocl.setUseOpenCL(False)
-from sim2real.utils.constants import TOX, TOY, GRID_SPACING, TWX, TWY, TBS, TBE, TBSX, TBSY, TBEX, TBEY
-from sim2real.utils.general import softmax, bin_to_xyz_np
+from domrand.utils.constants import TOX, TOY, GRID_SPACING, TWX, TWY, TBS, TBE, TBSX, TBSY, TBEX, TBEY
+from domrand.utils.general import softmax, bin_to_xyz_np
 
 # IMAGE UTILS
 def display_image(cam_img, real_img_path='./data/real/3-3.jpg', mode='preproc'):

@@ -1,9 +1,9 @@
 import numpy as np
 import tensorflow as tf
 
-from sim2real.define_flags import FLAGS
-from sim2real.utils.general import bin_to_xyz_tf
-from sim2real.utils.networks import reg_forward, vgg_forward, trivial_forward
+from domrand.define_flags import FLAGS
+from domrand.utils.general import bin_to_xyz_tf
+from domrand.utils.networks import reg_forward, vgg_forward, trivial_forward
 
 activ = {'relu': tf.nn.relu, 'tanh': tf.tanh}[FLAGS.activ]
 forward = {'reg': reg_forward, 'resnet': None, 'vgg': vgg_forward, 'trivial':trivial_forward}[FLAGS.arch]

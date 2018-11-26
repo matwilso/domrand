@@ -2,9 +2,9 @@
 import os
 import random
 import tensorflow as tf
-from sim2real.define_flags import FLAGS
-from sim2real.trainer import train_simple
-from sim2real.utils.general import notify
+from domrand.define_flags import FLAGS
+from domrand.trainer import train_simple
+from domrand.utils.general import notify
 
 def main():
     print(FLAGS.checkpoint)

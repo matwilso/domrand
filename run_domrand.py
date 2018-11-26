@@ -2,9 +2,9 @@
 import os
 import time
 
-from sim2real.define_flags import FLAGS
-from sim2real.sim_manager import SimManager
-from sim2real.utils.data import write_data
+from domrand.define_flags import FLAGS
+from domrand.sim_manager import SimManager
+from domrand.utils.data import write_data
 
 """
 GPU:
