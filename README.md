@@ -24,25 +24,25 @@ of positions I was using.
 
 **Example simulated training images**
 
-<img src='./data/example_sim/1.png' width="75"/> <img src='./data/example_sim/2.png' width="75"/>
-<img src='./data/example_sim/3.png' width="75"/>
-<img src='./data/example_sim/4.png' width="75"/>
-<img src='./data/example_sim/5.png' width="75"/>
-<img src='./data/example_sim/6.png' width="75"/>
-<img src='./data/example_sim/7.png' width="75"/>
-<img src='./data/example_sim/8.png' width="75"/>
-<img src='./data/example_sim/9.png' width="75"/>
-<img src='./data/example_sim/10.png' width="75"/>
+<img src='./assets/example_sim/1.png' width="75"/> <img src='./assets/example_sim/2.png' width="75"/>
+<img src='./assets/example_sim/3.png' width="75"/>
+<img src='./assets/example_sim/4.png' width="75"/>
+<img src='./assets/example_sim/5.png' width="75"/>
+<img src='./assets/example_sim/6.png' width="75"/>
+<img src='./assets/example_sim/7.png' width="75"/>
+<img src='./assets/example_sim/8.png' width="75"/>
+<img src='./assets/example_sim/9.png' width="75"/>
+<img src='./assets/example_sim/10.png' width="75"/>
 
-<img src='./data/example_sim/11.png' width="75"/> <img src='./data/example_sim/12.png' width="75"/>
-<img src='./data/example_sim/13.png' width="75"/>
-<img src='./data/example_sim/14.png' width="75"/>
-<img src='./data/example_sim/15.png' width="75"/>
-<img src='./data/example_sim/16.png' width="75"/>
-<img src='./data/example_sim/17.png' width="75"/>
-<img src='./data/example_sim/18.png' width="75"/>
-<img src='./data/example_sim/19.png' width="75"/>
-<img src='./data/example_sim/20.png' width="75"/>
+<img src='./assets/example_sim/11.png' width="75"/> <img src='./assets/example_sim/12.png' width="75"/>
+<img src='./assets/example_sim/13.png' width="75"/>
+<img src='./assets/example_sim/14.png' width="75"/>
+<img src='./assets/example_sim/15.png' width="75"/>
+<img src='./assets/example_sim/16.png' width="75"/>
+<img src='./assets/example_sim/17.png' width="75"/>
+<img src='./assets/example_sim/18.png' width="75"/>
+<img src='./assets/example_sim/19.png' width="75"/>
+<img src='./assets/example_sim/20.png' width="75"/>
 
 
 **Evaluation**
@@ -53,11 +53,17 @@ robot arm.  I run the model trained in simulation on each of these images,
 and achieve an average error of 3.7cm.  I also show examples from different
 percentiles.  Note that the worst results come from the object being on
 the edge of the table, and that despite a few outliers, the results are
-pretty strong (maybe 2.5-ish cm).
+pretty strong.  Here are percentiles (100, 90, 80, 70
 
-// TODO: show percentiles of results
+100 |  90 |  80  | 70
+:------:|:---------:|:----------:|:----:|
+![](/assets/percentiles/100.png)  |  ![](/assets/percentiles/90.png) | ![](/assets/percentiles/80.png) | ![](/assets/percentiles/70.png)
 
-// TODO: adapt script to load and run model from checkpoint to evaluate images and return accuracy value
+50 |  20 |  10  | 0
+:------:|:---------:|:----------:|:----:|
+![](/assets/percentiles/50.png)  |  ![](/assets/percentiles/20.png) | ![](/assets/percentiles/10.png) | ![](/assets/percentiles/0.png)
+
+
 
 ## Setup
 

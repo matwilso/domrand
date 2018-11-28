@@ -5,7 +5,7 @@ FLAGS = flags.FLAGS
 # TODO: add meta-flags that cover several hyperamaters so that we can easily change them all at once instead of setting them individually
 
 # DomRand flags
-flags.DEFINE_string('xml', default='xmls/kuka/lbr4_reflex.xml', help='')
+flags.DEFINE_string('xml', default='assets/xmls/kuka/lbr4_reflex.xml', help='')
 flags.DEFINE_bool('gpu_render', default=True, help='Called gpu_render because it makes rendering fast on gpu, but I think you can also use this on cpu')
 flags.DEFINE_bool('gui', default=False, help='')
 flags.DEFINE_bool('display_data', default=False, help='')
