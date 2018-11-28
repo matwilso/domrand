@@ -47,13 +47,15 @@ of positions I was using.
 
 **Evaluation**
 
-To evaluate my system, I collected [52 images](./data/real) from the real world
+To evaluate my system, I collected [54 images](./data/real) from the real world
 with a cube placed in uniformly spaced positions on a table in front of the
 robot arm.  I run the model trained in simulation on each of these images, 
 and achieve an average error of 3.7cm.  I also show examples from different
 percentiles.  Note that the worst results come from the object being on
 the edge of the table, and that despite a few outliers, the results are
-pretty strong.  Here are percentiles (100, 90, 80, 70
+pretty strong.  Here are plots showing the percentiles of performance,
+with 100 being one of the examples that nearly predicted the location within
+under 1 cm.
 
 100 |  90 |  80  | 70
 :------:|:---------:|:----------:|:----:|
