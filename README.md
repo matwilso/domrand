@@ -1,12 +1,13 @@
 # Reproducing Domain Randomization for Sim-to-Real
-[[Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World]](https://arxiv.org/abs/1703.06907)
+Reproducing [[Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World]](https://arxiv.org/abs/1703.06907)
 
 
+## Intro
 
 This repository contains my implementation of domain randomization setup
 for training an object localization model in simulation to adapt to the real 
 world.  I was implementing this as part of a larger research project, and decided
-to pull this code out and publish in case others may find it useful.
+to publish this in case others may find it useful.
 
 I use the KUKA LBR4 arm ([video](https://youtu.be/wu7q5IZRJTA)) instead of the Fetch 
 robot that was used in OpenAI's initial domain randomization work.  
@@ -16,13 +17,27 @@ with a model trained purely in simulation.  I suspect I could improve
 this accuracy to be on par with the 1.5cm reported in the original paper, 
 by doing better calibration to the real world and randomizing some more relevant 
 aspects of the visuals.  But I figured the results are good enough for purposes
-of showing it works, and 3.7cm is still quite good for the larger range
-of positions I was using.
+of showing it works, and 3.7cm is still quite good for the bigger table
+(with large range of positions) I was using.
+
+
+**Table of Contents**
+- [Results](#results)
+- [Setup](#setup)
+- [Instructions](#instructions)
+- [Mujoco Tips](#mujoco-tips)
+
 
 
 ## Results
 
-**Example simulated training images**
+**Training**
+
+I randomize the textures, lighting, camera position and orientation (slightly around
+the real world), and I train the model to predict the cube XYZ coordinates (with
+fixed height, so Z is always the same, as in the paper).
+
+**Example images**
 
 <img src='./assets/example_sim/1.png' width="75"/> <img src='./assets/example_sim/2.png' width="75"/>
 <img src='./assets/example_sim/3.png' width="75"/>
@@ -50,12 +65,17 @@ of positions I was using.
 To evaluate my system, I collected [54 images](./data/real) from the real world
 with a cube placed in uniformly spaced positions on a table in front of the
 robot arm.  I run the model trained in simulation on each of these images, 
-and achieve an average error of 3.7cm.  I also show examples from different
-percentiles.  Note that the worst results come from the object being on
-the edge of the table, and that despite a few outliers, the results are
-pretty strong.  Here are plots showing the percentiles of performance,
-with 100 being one of the examples that nearly predicted the location within
-under 1 cm.
+and achieve an average error of 3.7cm.  I show examples from various 
+percentiles with 100 being the best prediction (under 1 cm error) and 0 
+being the worst prediction (45 cm error).  Note that the worst results come from 
+the object being on the edge of the table, and that despite a few outliers, 
+the model is pretty accuracte.  
+
+NOTE: that I only use the XY coordinates in calculating error, since the height
+is always the same. This provides a more fair estimation of model accuracy.
+
+
+**Plots for percentiles of model accuracy (best = 100, worst = 0)**
 
 100 |  90 |  80  | 70
 :------:|:---------:|:----------:|:----:|
@@ -119,10 +139,10 @@ you could likely get away with 20k.
 **Running model**
 
 ```
-python3 run_training.py 
+python3 run_training.py --num_files=100
 ```
 
-This trains in about 3 hours on a GTX 1080 Ti GPU.
+This will train a model in about 3 hours (about 8 epochs) on a GTX 1080 Ti GPU.
 
 You can monitor training progress and results using TensorBoard. The default
 is to log into the `checkpoint` folder.  See [`sim2real/define_flags.py`](./sim2real/define_flags.py) or

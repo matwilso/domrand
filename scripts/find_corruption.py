@@ -2,8 +2,8 @@
 import tensorflow as tf
 from tensorflow.python.lib.io.tf_record import TFRecordOptions, TFRecordCompressionType, TFRecordWriter
 from tensorflow.python.framework.errors import DataLossError
-from sim2real.define_flags import FLAGS
-from sim2real.utils.data import parse_record
+from domrand.define_flags import FLAGS
+from domrand.utils.data import parse_record
 
 
 def validate_dataset(filenames, reader_opts=None):
