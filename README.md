@@ -37,7 +37,7 @@ I randomize the textures, lighting, camera position and orientation (slightly ar
 the real world), and I train the model to predict the cube XYZ coordinates (with
 fixed height, so Z is always the same, as in the paper).
 
-**Example images**
+**Example training images**
 
 <img src='./assets/example_sim/1.png' width="75"/> <img src='./assets/example_sim/2.png' width="75"/>
 <img src='./assets/example_sim/3.png' width="75"/>
@@ -123,6 +123,10 @@ python3 demos/disco_fetch.py
 **Generating data**
 ```
 python3 run_domrand.py
+
+# or
+
+python3 run_domrand.py --gui 1  # to visualize results, but not write to file
 
 # And you can just kill it when you are done. 
 # My code handles file closing for imcomplete writes, but can sometimes cause data corruptoins. 
